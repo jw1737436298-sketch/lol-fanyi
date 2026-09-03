@@ -106,7 +106,6 @@ $Input.Multiline = $true
 $Input.ScrollBars = "Vertical"
 $Input.Location = New-Object System.Drawing.Point(10, 10)
 $Input.Size = New-Object System.Drawing.Size(324, 82)
-$Input.PlaceholderText = "Paste chat or type Chinese..."
 
 $Result = New-Object System.Windows.Forms.TextBox
 $Result.Multiline = $true
@@ -114,7 +113,6 @@ $Result.ScrollBars = "Vertical"
 $Result.ReadOnly = $true
 $Result.Location = New-Object System.Drawing.Point(10, 100)
 $Result.Size = New-Object System.Drawing.Size(324, 82)
-$Result.PlaceholderText = "Result"
 
 $ToChinese = New-Object System.Windows.Forms.Button
 $ToChinese.Text = "To CN"
@@ -229,4 +227,3 @@ if ((Read-EnvFile)["OPENAI_API_KEY"] -like "sk-your-key*") {
 
 [System.Windows.Forms.Application]::EnableVisualStyles()
 [System.Windows.Forms.Application]::Run($Form)
-
